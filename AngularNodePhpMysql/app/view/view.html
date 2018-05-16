@@ -1,0 +1,20 @@
+<table class="table" >
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>RollNo</th>
+			<th>PhoneNo</th>
+			<th>Actions</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in studentList"> 
+			<td>{{item.id}}</td>
+			<td>{{item.name}}</td>
+			<td>{{item.rollno}}</td>
+			<td>{{item.phoneNo}}</td>
+			<td><button ng-click="update(item.id)" class="btn btn-sm">Update</button> &nbsp &nbsp &nbsp<button ng-click="delete(item.id)" class="btn btn-sm">Delete</button></td>
+		</tr>
+	</tbody>
+</table>
